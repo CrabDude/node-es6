@@ -1,6 +1,8 @@
 node-es6
 ========
 
+A `node --harmony` executable with traceur compilation using `.traceurrc` via the [rc module](https://www.npmjs.org/package/rc).
+
 #Install
 
 ```
