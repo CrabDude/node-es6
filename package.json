@@ -1,0 +1,26 @@
+{
+  "name": "node-es6",
+  "version": "0.0.0",
+  "description": "A tracueur-enabled node executable replacement.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "bin": {
+    "node-es6": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "traceur"
+  ],
+  "author": "Adam Crabtree",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "rc": "^0.5.1",
+    "traceur": "0.0.62",
+    "yargs": "^1.3.1"
+  }
+}
