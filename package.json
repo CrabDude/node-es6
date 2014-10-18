@@ -1,6 +1,6 @@
 {
   "name": "node-es6",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tracueur-enabled node executable replacement.",
   "main": "index.js",
   "engines": {
