@@ -2,11 +2,13 @@
 "use strict";
 
 let path = require('path')
+  , fs = require('fs')
   , argv = require('yargs').argv._
   , traceur = require('traceur')
   , rc = require('rc')
   , _ = require('lodash')
-  , tracuerConfig = _.omit(rc('traceur'), ['config', '_'])
+  , defaultrc = JSON.parse(fs.readFileSync(__dirname + '/.traceurrc'))
+  , tracuerConfig = _.omit(rc('traceur', defaultrc), ['config', '_'])
 
 // Don't transpile dependencies
 function traceurFilter(filename) {
